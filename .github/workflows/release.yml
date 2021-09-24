@@ -3,7 +3,7 @@ name: Semantic Releate NPM Package
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   release:

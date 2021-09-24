@@ -1,37 +1,33 @@
 {
-  "name": "@pixelmatters/eslint-config-pixelmatters",
+  "name": "@pixelmatters/eslint-react-config-pixelmatters",
   "version": "1.0.2",
-  "description": "Eslint config for usage in Pixelmatters projects",
+  "description": "Eslint config for usage in Pixelmatters projects that use React",
   "author": "Pixelmatters",
-  "homepage": "https://github.com/Pixelmatters/eslint-config-pixelmatters#readme",
+  "homepage": "https://github.com/Pixelmatters/eslint-react-config-pixelmatters#readme",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Pixelmatters/eslint-config-pixelmatters/issues"
+    "url": "https://github.com/Pixelmatters/eslint-react-config-pixelmatters/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Pixelmatters/eslint-config-pixelmatters.git"
+    "url": "git://github.com/Pixelmatters/eslint-react-config-pixelmatters.git"
   },
   "keywords": [
     "eslint-config",
-    "eslint"
+    "eslint",
+    "react"
   ],
   "publishConfig": {
     "access": "public"
   },
   "main": "index.js",
-  "dependencies": {
-    "@typescript-eslint/parser": ">= 2.31.0",
-    "eslint-config-prettier": ">= 6.10.0"
-  },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">= 2.31.0",
-    "eslint": ">= 6.8.0",
-    "eslint-plugin-prettier": ">= 3.1.3",
-    "prettier": ">= 2.0.5",
-    "typescript": ">= 3.8.3"
+    "eslint": ">= 6.8.0"
   },
   "devDependencies": {
     "@semantic-release/npm": "^7.0.10"
+  },
+  "dependencies": {
+    "@pixelmatters/eslint-config-pixelmatters": "^1.0.2"
   }
 }
