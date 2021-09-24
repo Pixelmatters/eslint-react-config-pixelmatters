@@ -1,6 +1,6 @@
 {
   "name": "@pixelmatters/eslint-react-config-pixelmatters",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "Eslint config for usage in Pixelmatters projects that use React",
   "author": "Pixelmatters",
   "homepage": "https://github.com/Pixelmatters/eslint-react-config-pixelmatters#readme",
