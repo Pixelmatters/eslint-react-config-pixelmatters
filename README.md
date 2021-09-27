@@ -27,61 +27,38 @@ This is a ESLint config that you can use in your projects.
 
 ## 🚀 Get Up and Running
 
-You can install this package using either **npm** or **yarn**.
+You can install this package using the package manger of your choice.
 
-### **Yarn**
+This package requires you to add some missing peer dependencies:
+* [esLint](https://www.npmjs.com/package/eslint)
+* [prettier](https://www.npmjs.com/package/prettier)
+* [typescript](https://www.npmjs.com/package/typescript)
+* [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)
+* [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier)
 
-If using Yarn:
+### Add the new dependencies
 
-1. Install the package as a development dependency:
-
-```shell
-yarn add @pixelmatters/eslint-react-config-pixelmatters --dev
-```
-
-2. Add all the missing peer dependencies:
-
-```shell
-yarn add @typescript-eslint/eslint-plugin eslint-plugin-prettier --dev
-```
-
-(This config assumes you have **ESLint**, **Typescript** and **Prettier** already installed; if not, run the following code: )
-
-``` shell
-yarn add typescript eslint prettier --dev
-```
-
-3. Create an `.eslintrc.js`  file in the root of your project and add the following code:
-
-``` js
-module.exports = {
-  extends: ['@pixelmatters/eslint-react-config-pixelmatters'],
-};
-```
-
-### **NPM**
-
-If using NPM:
-
-1. Install the package as a development dependency:
+**If you are using pnpm:**
 
 ```shell
-npm install @pixelmatters/eslint-react-config-pixelmatters --save-dev
+pnpm install -D @pixelmatters/eslint-react-config-pixelmatters @typescript-eslint/eslint-plugin eslint-plugin-prettier typescript eslint prettier
 ```
 
-2. Add all the missing peer dependencies:
+**If you are using yarn:**
 
 ```shell
-npm install @typescript-eslint/eslint-plugin eslint-plugin-prettier --save-dev
+yarn add -D @pixelmatters/eslint-react-config-pixelmatters @typescript-eslint/eslint-plugin eslint-plugin-prettier typescript eslint prettier
 ```
 
-(This config assumes you have **ESLint**, **Typescript** and **Prettier** already installed; if not, run the following code: )
+**If you are using npm:**
 
-``` shell
-npm install typescript eslint prettier --save-dev
+```shell
+npm install --save-dev @pixelmatters/eslint-react-config-pixelmatters @typescript-eslint/eslint-plugin eslint-plugin-prettier typescript eslint prettier
 ```
 
-3. Create an `.eslintrc.js`  file in the root of your project and add the following code:
+### Tell ESLint to use this config
+
+Create an `.eslintrc.js`  file in the root of your project and add the following code:
 
 ``` js
 module.exports = {
