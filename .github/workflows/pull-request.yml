@@ -6,6 +6,21 @@ on:
       - main
 
 jobs:
+  # Lint commit messages on pull requests
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Lint commit messages
+        uses: wagoid/commitlint-github-action@v1
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   # Run unit tests on the latest Node LTS version
   unit:
     name: Unit Tests
