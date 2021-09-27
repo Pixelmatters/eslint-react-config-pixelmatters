@@ -1,4 +1,4 @@
-name: Semantic Releate NPM Package
+name: Semantic Release NPM Package
 
 on:
   push:
@@ -19,8 +19,22 @@ jobs:
         with:
           node-version: 14
 
+      - name: Cache pnpm modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-
+
       - name: Install dependencies
-        run: npm ci
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.15.1
+          run_install: true
+
+      - name: Run tests
+        run: pnpm run test
 
       - name: Semantic Release and Publish to NPM
         uses: cycjimmy/semantic-release-action@v2
