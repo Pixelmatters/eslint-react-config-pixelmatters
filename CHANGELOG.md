@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Pixelmatters/eslint-config-react/compare/v1.0.0...v1.0.1) (2021-09-29)
+
+
+### Bug Fixes
+
+* package name ([be5a96b](https://github.com/Pixelmatters/eslint-config-react/commit/be5a96b25397b0a3faefb7b670406b09df92b299))
+
 # 1.0.0 (2021-09-24)
 
 
