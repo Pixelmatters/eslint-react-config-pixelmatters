@@ -1,16 +1,16 @@
 {
-  "name": "@pixelmatters/eslint-react-config-pixelmatters",
+  "name": "@pixelmatters/eslint-config-react",
   "version": "1.0.0",
   "description": "Eslint config for usage in Pixelmatters projects that use React",
   "author": "Pixelmatters",
-  "homepage": "https://github.com/Pixelmatters/eslint-react-config-pixelmatters#readme",
+  "homepage": "https://github.com/Pixelmatters/eslint-config-react#readme",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Pixelmatters/eslint-react-config-pixelmatters/issues"
+    "url": "https://github.com/Pixelmatters/eslint-config-react/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Pixelmatters/eslint-react-config-pixelmatters.git"
+    "url": "git://github.com/Pixelmatters/eslint-config-react.git"
   },
   "keywords": [
     "eslint-config",
